@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Demo1</display-name>
+  <welcome-file-list>
+    <welcome-file>loginpage.jsp</welcome-file>
+  </welcome-file-list>
+  
+<servlet>
+    <servlet-name>Sec_Servlet</servlet-name>
+    <servlet-class>com.firstwebapp.SecServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Sec_Servlet</servlet-name>
+    <url-pattern>/reg</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>Stud_Servlet</servlet-name>
+    <servlet-class>com.firstwebapp.SearchStud</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Stud_Servlet</servlet-name>
+    <url-pattern>/serch</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>SqProg</servlet-name>
+	<servlet-class>com.firstwebapp.SQServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SqProg</servlet-name>
+<url-pattern>/square</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>firSServ</servlet-name>
+	<servlet-class>com.firstwebapp.FirstServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>firSServ</servlet-name>
+<url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+
+
+
+  
+</web-app>
